@@ -1,0 +1,51 @@
+# Virtual Environments
+venv/
+old_env/
+
+# Python Cache
+__pycache__/
+*.pyc
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Datasets
+data/
+
+# Database Files
+*.db
+fraud_predictions.db
+
+# Reports
+reports/
+
+# macOS
+.DS_Store
+
+# Logs
+*.log
+
+# VS Code
+.vscode/
+
+# Environment Variables
+.env
+
+# Temporary Files
+*.tmp
+
+CreditcardFraud_ML.ipynb
+dash_app_backup_working.py
+dash_app_old.py
+docker-composeold.yml
+models_other/
+Untitled Folder/
+
+# Backup files
+CreditcardFraud_ML.ipynb
+dash_app_backup_working.py
+dash_app_old.py
+dashboard/flagged_transactions.csv
+docker-composeold.yml
+models_other/
+*.pkl
