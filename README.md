@@ -1,157 +1,281 @@
-# Credit Card Fraud Detection System
+# 💳 Real-Time Credit Card Fraud Detection System
 
 ## Overview
 
-This project is an end-to-end Credit Card Fraud Detection platform that combines Machine Learning, Real-Time Transaction Monitoring, API Services, PostgreSQL, Docker and Interactive Dashboards.
+This project is an end-to-end machine learning solution for detecting fraudulent credit card transactions in real time.
 
-The solution simulates live financial transactions, scores them using a trained fraud detection model and visualizes fraud activity in real time.
+The system combines:
+
+- Machine Learning
+- FastAPI
+- Dash
+- SQLite
+- Docker
+- Kafka (streaming-ready)
+- Plotly
+- Python
+
+It provides both operational fraud monitoring and executive analytics.
 
 ---
 
-## Architecture
+# Features
+
+## Machine Learning
+
+Multiple models evaluated:
+
+- Random Forest
+- Logistic Regression
+- Naive Bayes
+- XGBoost
+- Support Vector Machine
+
+Production model:
+
+- Random Forest
+
+---
+
+## Real-Time Prediction API
+
+Built using FastAPI.
+
+Features:
+
+- Transaction scoring
+- Fraud probability calculation
+- Risk classification
+- Recommended actions
+- Prediction storage
+
+Swagger UI:
+
+http://127.0.0.1:8000/docs
+
+---
+
+## Interactive Dashboard
+
+Built using Dash and Plotly.
+
+Includes:
+
+- KPI cards
+- Fraud risk gauge
+- Fraud trend analysis
+- Fraud heatmap
+- Country exposure
+- Merchant exposure
+- Channel exposure
+- Top risk countries
+- Top merchants
+- Fraud probability distribution
+- Live fraud alerts
+- Executive summary
+
+---
+
+# Architecture
 
 Transaction Generator
+
 ↓
-Fraud Detection API (FastAPI)
+
+FastAPI API
+
 ↓
+
 Machine Learning Model
+
 ↓
-PostgreSQL Database
+
+SQLite Database
+
 ↓
+
 Dash Dashboard
+
 ↓
-Real-Time Monitoring
+
+Executive Analytics
 
 ---
 
-## Features
-
-- Fraud Prediction API
-- Random Forest Fraud Model
-- Live Transaction Simulator
-- PostgreSQL Integration
-- Dockerized Deployment
-- Real-Time Fraud Dashboard
-- Fraud by Merchant
-- Fraud by Country
-- Risk Score Monitoring
-- Fraud Alerts
-
----
-
-## Technology Stack
-
-### Backend
-
-- Python
-- FastAPI
-- PostgreSQL
-
-### Machine Learning
-
-- Scikit-Learn
-- Random Forest
-- Pandas
-- NumPy
-
-### Dashboard
-
-- Dash
-- Plotly
-
-### DevOps
-
-- Docker
-- Docker Compose
-- GitHub
-
----
-
-## Project Structure
+# Folder Structure
 
 ```text
-credit_card_fraud_project/
-
+credit_card_fraud_project
+│
 ├── api/
-│   └── main.py
-
+├── dashboard/
 ├── database/
-│   ├── db.py
-│   └── models.py
-
+├── docker/
+├── docs/
 ├── models/
-│   └── random_forest_fraud_model.pkl
-
+├── models_other/
+├── notebooks/
+├── reports/
+├── scripts/
 ├── simulator/
-│   ├── transaction_generator.py
-│   ├── kafka_producer.py
-│   └── kafka_consumer.py
-
-├── dash_app.py
-├── docker-compose.yml
 ├── requirements.txt
 └── README.md
 ```
 
 ---
 
-## Running Locally
+# Machine Learning Models
 
-### Create Virtual Environment
+| Model | Status |
+|--------|--------|
+| Random Forest | Production |
+| Logistic Regression | Evaluated |
+| Naive Bayes | Evaluated |
+| XGBoost | Evaluated |
+| SVM | Evaluated |
+
+---
+
+# Dashboard Components
+
+### KPI Cards
+
+- Fraud Alerts
+- Genuine Transactions
+- Fraud Exposure
+- Fraud Rate
+
+### Executive Analytics
+
+- Risk Gauge
+- Fraud Heatmap
+- Top Risk Countries
+- Top Merchants
+- Fraud Trend
+- Fraud Probability Histogram
+
+### Operational Monitoring
+
+- Latest Fraud Alerts
+- Top 10 High Risk Transactions
+- Hourly Summary
+
+---
+
+# Technology Stack
+
+### Backend
+
+- Python
+- FastAPI
+
+### Dashboard
+
+- Dash
+- Plotly
+
+### Machine Learning
+
+- Scikit-learn
+- Pandas
+- NumPy
+
+### Database
+
+- SQLite
+
+### Containerization
+
+- Docker
+
+### Streaming
+
+- Kafka (planned)
+
+---
+
+# Installation
+
+Clone repository:
 
 ```bash
-python -m venv venv
+git clone https://github.com/madesina2025/credit_card_fraud_project.git
+```
+
+Activate environment:
+
+```bash
 source venv/bin/activate
 ```
 
-### Install Dependencies
+Install dependencies:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### Start API
+---
+
+# Start API
 
 ```bash
 uvicorn api.main:app --reload
 ```
 
-### Start Dashboard
+---
+
+# Start Dashboard
 
 ```bash
-python dash_app.py
+python dashboard/dash_app.py
 ```
 
----
+Dashboard URL:
 
-## Dashboard
-
-The dashboard provides:
-
-- Fraud Alerts
-- Fraud Count by Merchant
-- Fraud Count by Country
-- Transaction Monitoring
-- Risk Level Analysis
+http://127.0.0.1:8050
 
 ---
 
-## Future Enhancements
+# Documentation
 
+Detailed documentation is available inside:
+
+```text
+docs/
+```
+
+Files:
+
+- architecture.md
+- api_documentation.md
+- dashboard_guide.md
+- deployment_guide.md
+
+---
+
+# Future Enhancements
+
+- PostgreSQL
 - Kafka Streaming
+- Redis
+- WebSocket
+- Email Alerts
+- SMS Alerts
+- Grafana
+- Prometheus
 - AWS Deployment
 - Azure Deployment
-- Real-Time Alert Notifications
-- Power BI Integration
-- Tableau Integration
+- GCP Deployment
 
 ---
 
-## Author
+# Author
 
 Mukaila Adesina
 
-Data Engineer | Data Scientist | BI Developer
+Data Engineer | BI Developer | Machine Learning Enthusiast
 
 GitHub:
+
 https://github.com/madesina2025
+

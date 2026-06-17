@@ -49,3 +49,8 @@ dashboard/flagged_transactions.csv
 docker-composeold.yml
 models_other/
 *.pkl
+
+# Dashboard data
+dashboard/flagged_transactions_backup.csv
+dashboard/flagged_transactions_old.csv
+dashboard/flagged_transactions.csv
