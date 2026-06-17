@@ -54,3 +54,5 @@ models_other/
 dashboard/flagged_transactions_backup.csv
 dashboard/flagged_transactions_old.csv
 dashboard/flagged_transactions.csv
+data/model_comparison.csv
+data/confusion_matrix_summary.csv

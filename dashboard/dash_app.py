@@ -134,8 +134,8 @@ top_risk_transactions = (
 
 # Load data
 # df = pd.read_csv("dashboard/flagged_transactions.csv")
-model_df = pd.read_csv("data/model_comparison.csv")
-cm_df = pd.read_csv("data/confusion_matrix_summary.csv")
+model_df = pd.read_csv("data/processed/model_comparison.csv")
+cm_df = pd.read_csv("data/processed/confusion_matrix_summary.csv")
 
 # # KPIs
 # total_transactions = len(df)
