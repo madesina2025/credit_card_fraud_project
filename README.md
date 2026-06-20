@@ -315,6 +315,27 @@ Detailed project documentation is available in the `/docs` folder.
 
 | Document | Description |
 |-----------|-------------|
+| [architecture.md](docs/architecture.md) | Solution Architecture |
+| [system_architecture.md](docs/system_architecture.md) | End-to-End Architecture |
+| [api_documentation.md](docs/api_documentation.md) | FastAPI Documentation |
+| [dashboard_guide.md](docs/dashboard_guide.md) | Dashboard Guide |
+| [dashboard_features.md](docs/dashboard_features.md) | Dashboard Features |
+| [database_schema.md](docs/database_schema.md) | Database Design |
+| [model_documentation.md](docs/model_documentation.md) | ML Model Documentation |
+| [business_case.md](docs/business_case.md) | Business Value |
+| [project_structure.md](docs/project_structure.md) | Folder Structure |
+| [installation_guide.md](docs/installation_guide.md) | Installation Guide |
+| [deployment_guide.md](docs/deployment_guide.md) | Deployment Guide |
+| [aws_deployment.md](docs/aws_deployment.md) | AWS Deployment |
+| [azure_deployment.md](docs/azure_deployment.md) | Azure Deployment |
+| [gcp_deployment.md](docs/gcp_deployment.md) | GCP Deployment |
+| [kafka_future_architecture.md](docs/kafka_future_architecture.md) | Kafka Architecture |
+| [future_roadmap.md](docs/future_roadmap.md) | Future Enhancements |
+
+
+
+<!-- | Document | Description |
+|-----------|-------------|
 | docs/architecture.md | Solution Architecture |
 | docs/system_architecture.md | End-to-End Architecture |
 | docs/api_documentation.md | FastAPI Documentation |
@@ -330,7 +351,7 @@ Detailed project documentation is available in the `/docs` folder.
 | docs/azure_deployment.md | Azure Deployment |
 | docs/gcp_deployment.md | GCP Deployment |
 | docs/kafka_future_architecture.md | Kafka Roadmap |
-| docs/future_roadmap.md | Future Enhancements |
+| docs/future_roadmap.md | Future Enhancements | -->
 
 ---
 
